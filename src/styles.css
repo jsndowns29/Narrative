@@ -1,0 +1,311 @@
+/*Navbar-----------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+#navbar{
+    background: #272727;
+    height: 5em;
+    border-top: 1px solid gold !important;
+    margin-top: -1px !important;
+    
+}
+
+#nav-container{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links{
+    color: RGB(255,255,255);
+    font-family: Arial, sans-serif;
+    position: relative;
+    margin-top: 1.2em;
+    margin-left: 2em;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.nav-links:hover{
+    color: gray;
+}
+
+/*Dataset Tile-----------------------------------------------*/
+
+.dataset-tile{
+    background: #E1E1DB;
+    /* Shadow-s */
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    width: 465px;
+    height: 370px;
+    margin-top:4em;
+}
+
+.same-line{
+    display: flex;
+    align-items: center;
+}
+
+.content-wrapper{
+    padding-top: 2em; 
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+}
+
+.title{
+    text-decoration: underline;
+}
+
+.space{
+    margin-top:1.3em;
+}
+
+.heading-space{
+    margin-top: 0em;
+}
+
+.headline{
+    margin-left: 2em;
+}
+
+.align-right{
+   margin-left: 13em;
+   margin-right: 2em;
+}
+
+/*Dataset Grid-----------------------------------------------*/
+.datasets-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 9%;
+  padding: 10px;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+/*Countries Selector-----------------------------------------------*/
+.countries-panel{
+    background: #E1E1DB;
+    /* Shadow-s */
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    width: 500px;
+    height: 90px;
+    bottom: 0px;
+    margin: auto;
+    position:fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.center{
+    justify-self: center;
+}
+
+.center2{
+    display: flex;
+    justify-content: center;
+}
+.buttons-container{
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.country-button{
+    padding: 10px;
+    border: none;
+    text-align: center;
+    margin: 4px 4px;
+    border-radius: 12px;
+}
+/*BuyOrder Grid-----------------------------------------------*/
+.buyorder-grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin-bottom: 120px;
+  }
+/*BuyOrder Tile-----------------------------------------------*/
+.buyorder-tile{
+    background: #E1E1DB;
+    /* Shadow-s */
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    width: 600px;
+    height: 100px;
+    margin-top:2em;
+}
+
+.buyorder-tile-space{
+    margin-left: 4em;
+}
+
+.buyorder-tile-content-wrapper{
+    padding-top: 1.2em; 
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+}
+
+.gray-text{
+    color: gray;
+}
+
+.buyorder-tile-grid{
+    display:grid;
+    grid-template-columns: 12em 10em 7em 0em; 
+
+}
+
+/*BuyOrder Details Tile-----------------------------------------------*/
+
+.buyorder-details-tile{
+    background: #E1E1DB;
+    /* Shadow-s */
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    width: 600px;
+    height:700px;
+    margin-top:2em;
+}
+
+.buyorder-details-content-wrapper{
+    padding-top: 2em; 
+    margin-left: 1em;
+    margin-right: 1em;
+}
+/*BuyOrderDetailsDatasetTile-----------------------------------------------*/
+.buyorder-details-dataset-tile{
+    background: #EAEAEA;
+    /* Shadow-s */
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    width: 276px;
+    height: 75px;
+    margin-top:0.5em;
+}
+
+.buyorder-details-dataset-tile-content-wrapper{
+    padding-top: 1em; 
+    margin-left: 2em;
+    margin-right: 2.5em;
+}
+
+.buyorder-details-dataset-tile-text{
+    margin-left: 1em;
+    margin-top: -1.8em;
+    margin-bottom:0.3em;
+}
+
+
+.buyorder-details-dataset-tile-subtext{
+    margin-left: 3.5em;
+    margin-top: -1.8em;
+    margin-bottom: 1.7em;
+    color: gray;
+}
+
+.buyorder-details-dataset-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 3%;
+    padding: 10px;
+    height: 250px;
+    
+    justify-content: center;
+    overflow-x: auto;
+    overflow-y: auto;
+    overflow: scroll;
+    white-space: nowrap;
+  }
+
+  .float-right{
+      float: right;
+  }
+
+.view-page-buttons{
+    margin-right: 2em;
+
+    padding: 10px;
+    border: none;
+    text-align: center;
+    margin: 20px 20px;
+    padding: 15px 32px;
+    border-radius: 6px;
+    background-color: white;
+}
+.view-page-buttons:hover{
+    background-color: silver;
+}
+
+.view-page-buttons{
+    margin-top: 3em;
+}
+/*Buttons-----------------------------------------------------*/
+.submit-button{
+    padding: 10px;
+    border: none;
+    text-align: center;
+    margin: 50px 50px;
+    padding: 15px 32px;
+    border-radius: 6px;
+    margin-top: -200px;
+    background-color: white;
+    
+}
+
+.submit-button-container{
+    text-align: center;
+    margin-top: -60px;
+}
+
+.submit-button:hover{
+    background-color: silver;
+}
+
+.new-button-container{
+    text-align: center;
+}
+
+.new-button{
+    padding: 10px;
+    border: none;
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px 32px;
+    border-radius: 6px;
+    border: 0.3px solid black;
+    background-color: #E1E1DB; 
+}
+
+.new-button:hover{
+    background-color: silver;
+}
+
+.details-button{
+   
+    border: none;
+    text-align: center;
+    margin-top: 1.3em;
+    border: 0.3px solid black;
+    padding: 5px 5px;
+    border-radius: 6px;
+    background-color: #E1E1DB; 
+}
+
+.buyorder-text{
+    font-size: 12px;
+    margin-left: -10em;
+    margin-top: 2em; 
+}
+
+.buyorder-title{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1em;
+}
