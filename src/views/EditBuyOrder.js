@@ -47,9 +47,9 @@ export default function EditBuyOrder({datasets, countries, handleEditBuyOrder}) 
         
         //Name is chars only
         const checkName =/^[A-Za-z\s]*$/.test(nameRef.current.value);
-        //budjex is numbers and decimals only
-        const checkBudget = /^[1-9]\d{0,2}(\.\d{3})*(,\d+)?$/.test()
-        if(!checkName || checkBudget){
+        //budget is numbers and decimals only
+        const checkBudget = /^[1-9]\d{0,2}(\.\d{3})*(,\d+)?$/.test(budgetRef.current.value)
+        if(!checkName || !checkBudget){
             alert("Invalid input!\nOrder name must contain only letters and budget only numbers and decimals");
             return;
         }
@@ -58,8 +58,15 @@ export default function EditBuyOrder({datasets, countries, handleEditBuyOrder}) 
         let id = buyOrder.id;
         let selectedDatasetsArr = currentAvailableDatasets.filter((dataset)=>{return dataset.included === true}).map((dataset)=>{return dataset.datasetId});
         let selectedCountriesArr = currentSelectedCountries.filter((country)=>{return country.selected === true}).map((country)=>{return country.countryCode});
-        let toUpdate = {"name": nameRef.current.value, "createdAt": buyOrder.createdAt,"datasetIds": selectedDatasetsArr,"countries": selectedCountriesArr,"budget": budgetRef.current.value}
         
+        if(selectedDatasetsArr.length === 0 || selectedCountriesArr.length === 0){
+            alert("Invalid input!\nAt least 1 country and 1 dataset must be selected");
+            return;
+        }
+
+        let toUpdate = {"name": nameRef.current.value, "createdAt": buyOrder.createdAt,"datasetIds": selectedDatasetsArr,"countries": selectedCountriesArr,"budget": budgetRef.current.value}
+
+
         await axios.put("https://636accd1b10125b78fe51b68.mockapi.io/maritime/buy-orders/"+id, {
             "name": nameRef.current.value,
             "createdAt": buyOrder.createdAt,
